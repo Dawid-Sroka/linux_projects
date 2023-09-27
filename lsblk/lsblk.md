@@ -13,7 +13,7 @@ sdc           8:32   1  28,7G  0 disk
 This is very little informative. Whereas if you type `lsblk --help | less` you will see a very rich collection of columns to choose from. After some experiments I came up with: 
 ```
 $ lsblk -o name,MOUNTPOINT,LABEL,SIZE,FSTYPE,PARTTYPENAME,PTTYPE
-NAME        MOUNTPOIN LABEL                   SIZE FSTYPE  PARTTYPENAME                 PTTYPE
+NAME        MOUNTPOINT   LABEL                   SIZE FSTYPE  PARTTYPENAME                 PTTYPE
 sdb                                             14,4G                                      dos
 └─sdb1      /mnt/freemnt ESD-USB                14,4G vfat    W95 FAT32 (LBA)              dos
 sdc                      Debian 11.7.0 amd64 n  28,7G iso9660                              dos
